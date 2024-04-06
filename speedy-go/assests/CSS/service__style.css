@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Risque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}  
+.annie-use your telescope-regular {
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: poppins;
+}
+
+:root{
+    --primary:#012154;
+    --secondry:#d8e1ff;
+    --third:#ffc42a;
+    --forth:#fff;
+    --fifth:#012154;
+    --sixth:#000;
+}
+.dark-mode{
+    --primary:#000000;
+    --secondry:#1b1c1e;
+    --fifth:#fff;
+    --sixth:var(--forth);
+}
+nav{
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.df{
+    display: flex;
+}
+.logo__image{
+    width: 100%;
+}
+.logo{
+    width: 7%;
+    text-align: start;
+    margin-top: .5%;
+}
+.nav-middle__side{
+    width: 55%;
+    margin-left: 2%;
+    text-align: center;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list__item a{
+    color: var(--forth);
+    font-size: 18px;
+    text-decoration: none;
+}
+.list__item{
+    margin-top: 4%;
+}
+.active{
+    color: var(--secondry) !important;
+    font-weight: bold;
+    text-shadow:#d8e1ff 1.1px .1px  ;
+}
+.nav-right__side{
+    width: 38%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+}
+.language-switcher{
+    width: 60%;
+    margin-top: 6%;
+    display: flex;
+
+}
+.switch{
+    background-color: transparent;
+    color: var(--forth);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+.choose{
+    width: 30%;
+}
+.fa-globe{
+    color: var(--forth);
+    font-size: 25px;
+    margin-right: 1%;
+    width: 70%;
+}
+option{
+    background-color: var(--primary);
+}
+.toggle-mode{
+    width: 60%;
+    margin-top: 5%;
+    padding-left: 15%;
+}
+.sun-toggle{
+    background-color: #3479b0;
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.sun{
+    width: 25%;
+    height: 70%;
+    background-color: #f1c428;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    z-index: 888;
+    border-radius: 30px;
+
+}
+.first-layer{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    z-index: 777;
+    background-color: #6b9fc8;
+    left: -5%;
+    border-radius: 30px;
+
+}
+.second-layer{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 666;
+    background-color: #5b94c2;
+    left: -5%;
+    border-radius: 30px;
+
+}
+.third-layer{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    z-index: 555;
+    background-color: #4988bb;
+    left: -5%;
+    border-radius: 30px;
+
+}
+.fourth-layer img{
+    width: 100%;
+    height: 95%;
+    border-radius: 30px;
+
+}
+.fourth-layer{
+    position: absolute;
+    z-index:900;
+    right: 0%;
+    height:100%;
+    width: 80%;
+    top: 0%;
+    border-radius: 0;
+    background-color: transparent;
+
+}
+.fifth-layer img{
+    width: 100%;
+    height: 100%;
+}
+.fifth-layer{
+    position: absolute;
+    z-index:900;
+    right: 2%;
+    height:100%;
+    width: 80%;
+    top: 0%;
+    border-radius: 0;
+    background-color: transparent;
+}
+main{
+    background-color: var(--secondry);
+    margin-top: 5.9%;
+}
+.main-container{
+    width: 80%;
+    margin: auto;
+}
+.main__header{
+    text-align: center;
+    padding-top: 7%;
+}
+.header{
+    font-family: "Annie Use Your Telescope", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 86px;
+    color: var(--sixth);
+
+}
+.header span{
+    position: relative;
+    font-family: "Annie Use Your Telescope", cursive;
+}
+.header span::after{
+    content: "";
+    position: absolute;
+    background-image: url(../Images/SpeedyGo\ logo\ vertical\ 3.png);
+    width: 65px;
+    height: 65px;
+    right: 80%;
+    bottom: 40%;
+    background-size: cover;
+    display: block;
+}
+.convenient{
+    padding-top: 15%;
+}
+.convenient__left-side{
+    width: 50%;
+    text-align: center;
+}
+.convenient__left-side__header{
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: var(--sixth);
+}
+.convenient__left-side__content{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: 0em;
+    margin-top: 10%;
+    color: var(--sixth);
+}
+img{
+    width: 100%;
+}
+.convenient__right-side{
+    width: 50%;
+}
+.convenient__right-side__image{
+    width: 100%;
+    position: relative;
+    top: -35%;
+}
+.convenient-gap{
+    gap: 5%;
+}
+.options__header{
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--sixth);
+}
+.transportation-types{
+    width: 30%;
+
+}
+.transporte-motion{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--sixth);
+}
+.transportations{
+    gap: 7%;
+}
+.tok{
+    margin-top: 5%;
+}
+.bus{
+    margin-top: 4%;
+}
+.download__left-side{
+    width: 70%;
+}
+.rating { 
+    border: none;
+    float: left;
+}
+.rating > input { display: none; } 
+.rating > label:before { 
+    margin-right: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+    transform: rotateY('90deg');
+}
+
+.rating > label { 
+    color: #f2f2f2; 
+    float: right; 
+}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+.download__logo{
+    width: 10%;
+}
+.rate{
+    width: 90%;
+}
+.rate p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 44px;
+    color: var(--sixth);
+}
+.download__rate{
+    gap: 4%;
+}
+.download__left-side p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 70px;
+    color: var(--sixth);
+}
+.download{
+    margin-top: 20%;
+}
+.download__right-side{
+    width: 30%;
+}
+.safety{
+    padding: 15% 0 10% 0; 
+    
+}
+.safety__left-side{
+    width: 60%;
+}
+.safety__header{
+    font-family:"Montserrat", sans-serif ;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 61px;
+    text-align: center;
+    margin-bottom: 7%;
+    color: var(--sixth);
+}
+.safety__content{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--sixth);
+}
+.safety__right-side{
+    width: 40%;
+}
+.safety__img{
+    width: 65%;
+    transform: translateX(50%) translateY(-10%);
+    
+}
+footer{
+    background-color: var(--primary);
+    padding-bottom: 5%;
+}
+.footer-container{
+    width: 90%;
+    margin: auto;
+}
+.footer__left-side{
+    width: 33.3333333%;
+    margin: 2% 0 0 2%;
+}
+img{
+    width: 100%;
+}
+.footer-logo img{
+    width: 25%;
+}
+.footer-logo{
+    margin-bottom: 5%;
+    transform: translateX(26%);
+}
+.footer-download {
+    display: flex;
+    gap: 10%;
+}
+.footer-download div{
+    width: 35%;
+}
+.copy-right{
+    color: var(--forth);
+    font-size: 18px;
+    transform: translatex(3%);
+    margin-top: 2%;
+}
+.footer__middle-side{
+    width: 33.3333333%;
+    margin-top: 2%;
+    text-align: center;
+}
+.footer__middle-side-main{
+    font-size: 30px;
+    color: var(--forth);
+    font-family: "Architects Daughter", cursive; ;
+}
+.policies{
+    gap: 20px;
+    justify-content: center;
+    margin-top: 13.6%;
+}
+.policies p{
+    color: var(--forth);
+    font-size: 18px;
+    font-weight: 550;
+}
+.policies a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer__right-side{
+    width: 33.3333333%;
+    margin-top: 2.5%;
+    text-align: center;
+}
+.footer__links{
+    flex-wrap: wrap;
+    gap: 65px 0;
+}
+.footer__links a{
+    display: block;
+    width: 50%;
+    font-size: 18px;
+    color: var(--forth);
+    text-decoration: none;
+    font-weight: 600;    
+}
+.footer__icons{
+    display: flex;
+    margin-top: 11.5%;
+    gap: 15%;
+    justify-content: center;
+    transform: translateX(-3%);
+}
+.footer__icons a{
+    font-size: 25px;
+    color: var(--forth);
+    width: 0;
+    display: inline;
+    
+}
+.moon-toggle{
+    background-color: #1c1f2c;
+    width: 60%;
+    height: 60%;
+    margin:1% 0 0 2%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+.moon{
+    width: 30%;
+    height: 90%;
+    background-color: #bbc1c9;
+    position: absolute;
+    top: 6%;
+    right: 1%;
+    z-index: 888;
+    border-radius: 30px;
+    
+}
+.first-layer-moon{
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    z-index: 777;
+    background-color: #575963;
+    right: -5%;
+    border-radius: 30px;
+}
+.second-layer-moon{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 666;
+    background-color: #474954;
+    right: -5%;
+    border-radius: 30px;
+}
+.third-layer-moon{
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    z-index: 555;
+    background-color: #323440;
+    right: -5%;
+    border-radius: 30px;
+}
+.moon__first-circle{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    padding: 20%;
+    background-color: #949eb2;
+    border-radius: 50%;
+}
+.moon__second-circle{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 10%;
+    background-color: #949eb2;
+    border-radius: 50%;
+}
+
+.sun-toggle {
+    animation: fadeOut 1s ;
+}
+
+.moon-toggle {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
