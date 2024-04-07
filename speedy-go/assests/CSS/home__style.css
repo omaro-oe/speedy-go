@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Risque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}  
+.annie-use your telescope-regular {
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: poppins;
+}
+
+:root{
+    --primary:#012154;
+    --secondry:#d8e1ff;
+    --third:#ffc42a;
+    --forth:#fff;
+    --fifth:#012154;
+    --sixth:#000;
+    --seventh:#05026B;
+    --line:#4E91BA;
+    --btn:#69EAFF;
+    --background:url(../Images/Rectangle731.png);
+    --navcolor:#d8e1ff;
+}
+.dark-mode{
+    --primary:#000000;
+    --secondry:#1b1c1e;
+    --fifth:#fff;
+    --sixth:var(--forth);
+    --seventh:#000;
+    --line:#313131;
+    --btn:#313131;
+    --background:url(../Images/Rectangle731dark.png);
+    --navcolor:#fff;
+}
+
+
+nav{
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.df{
+    display: flex;
+}
+.logo__image{
+    width: 100%;
+}
+.logo{
+    width: 7%;
+    text-align: start;
+    margin-top: .5%;
+}
+.nav-middle__side{
+    width: 55%;
+    margin-left: 2%;
+    text-align: center;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list__item a{
+    color: var(--forth);
+    font-size: 18px;
+    text-decoration: none;
+}
+.list__item{
+    margin-top: 4%;
+}
+.active{
+    color: var(--navcolor) !important;
+    font-weight: bold;
+    text-shadow:#fff 1px 1px 2px   ;
+}
+.nav-right__side{
+    width: 38%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+}
+.language-switcher{
+    width: 60%;
+    margin-top: 6%;
+    display: flex;
+
+}
+.switch{
+    background-color: transparent;
+    color: var(--forth);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+.choose{
+    width: 30%;
+}
+.fa-globe{
+    color: var(--forth);
+    font-size: 25px;
+    margin-right: 1%;
+    width: 70%;
+}
+option{
+    background-color: var(--primary);
+}
+.toggle-mode{
+    width: 60%;
+    margin-top: 5%;
+    padding-left: 15%;
+}
+.sun-toggle{
+    background-color: #3479b0;
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.sun{
+    width: 25%;
+    height: 70%;
+    background-color: #f1c428;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    z-index: 888;
+    border-radius: 30px;
+
+}
+.first-layer{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    z-index: 777;
+    background-color: #6b9fc8;
+    left: -5%;
+    border-radius: 30px;
+
+}
+.second-layer{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 666;
+    background-color: #5b94c2;
+    left: -5%;
+    border-radius: 30px;
+
+}
+.third-layer{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    z-index: 555;
+    background-color: #4988bb;
+    left: -5%;
+    border-radius: 30px;
+
+}
+.fourth-layer img{
+    width: 100%;
+    height: 95%;
+    border-radius: 30px;
+
+}
+.fourth-layer{
+    position: absolute;
+    z-index:900;
+    right: 0%;
+    height:100%;
+    width: 80%;
+    top: 0%;
+    border-radius: 0;
+    background-color: transparent;
+
+}
+.fifth-layer img{
+    width: 100%;
+    height: 100%;
+}
+.fifth-layer{
+    position: absolute;
+    z-index:900;
+    right: 2%;
+    height:100%;
+    width: 80%;
+    top: 0%;
+    border-radius: 0;
+    background-color: transparent;
+}
+main{
+    background-color: var(--seventh);
+    margin-top: 5.9%;
+}
+.main__container{
+    width: 80%;
+    margin: auto;
+}
+.main__header{
+    text-align: center;
+    padding-top: 7%;
+}
+.header{
+    font-family: "Annie Use Your Telescope", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 86px;
+    color: #fff;
+
+}
+.header span{
+    position: relative;
+    font-family: "Annie Use Your Telescope", cursive;
+}
+.header span::after{
+    content: "";
+    position: absolute;
+    background-image: url(../Images/SpeedyGo\ logo\ vertical\ 3.png);
+    width: 65px;
+    height: 65px;
+    right: 80%;
+    bottom: 40%;
+    background-size: cover;
+    display: block;
+}
+img{
+    width: 100%;
+}
+.download{
+    width: 30%;
+    gap: 50px;
+    margin: 3% auto 2% auto;
+}
+.car-img{
+    width: 50%;
+    margin: auto;   
+}
+.benfets__header{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 7%;
+}
+.benefets__main_word{
+    position: relative;
+}
+hr{
+    position: absolute;
+    width: 15%;
+    top: 54%;
+    left: 16%;
+}
+.second-main hr{
+    left: 21%;
+    top: 54%;
+}
+.card{
+    width: 29%;
+    justify-content: center;
+}
+.card__img{
+    width: 15%;
+    margin: auto;
+}
+.title{
+    font-family:"Poppins", sans-serif ;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+.card__content{
+    color: #fff;
+    font-family:"Poppins", sans-serif ;
+    font-size: 20px;
+    margin-top: 7%;
+}
+.center{
+    gap: 7%;
+}
+.btn-one, .btn-two{
+    background-color: var(--btn);
+    border: none;
+    margin-top: 7%;
+    padding: 1% 2%;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family:"Poppins", sans-serif ;
+}
+.btn-one a, .btn-two a{
+    text-decoration: none;
+    color: var(--sixth);
+}
+.btns{
+    justify-content: space-between;
+}
+.btn-two  i{
+    transform: rotate(180deg);
+}
+.main-section{
+    background-image: url(../Images/Rectangle\ 730.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.choose-us .benfets__header::after{
+    left: 21%;
+}
+.choose-us{
+    margin-top: 12%;
+    padding-bottom: 40%;
+}
+.card-img{
+    width: 25%;
+    transform: translateX(50%);
+}
+.card-img .img{
+    width: 22%;
+}
+.img img{
+    aspect-ratio: 1/1;
+}
+.form__header{
+    margin-bottom: 1%;
+}
+.form__header, .form__content{
+    font-size: 40px;
+    font-family:"Poppins", sans-serif ;
+    font-weight:800;
+    color: #000;
+}
+.background{
+    background-image: url(../Images/earth.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: contain;
+}
+form{
+    margin-top: 40%;
+    padding-bottom: 50%;
+}
+input{
+    padding: 2% 5.9%;
+    margin: 0 3% 5% 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow:#000 0px 1px 3px 0px ;
+    font-size: 15px;
+    color: #000;
+}
+textarea{
+    padding: 0% 41% 0 4%;
+    margin: 0 3% 5% 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow:#000 0px 1px 3px 0px ;
+    font-size: 15px;
+    color: #000;
+    resize: vertical;
+}
+.form__left-side{
+    width: 60%;
+}
+.sub-btn{
+    background-color: var(--seventh);
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 1% 10%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form__right-side{
+    width: 40%;
+}
+.form__img{
+    width: 35%;
+}
+footer{
+    background-color: var(--primary);
+    padding-bottom: 5%;
+}
+.footer-container{
+    width: 90%;
+    margin: auto;
+}
+.footer__left-side{
+    width: 33.3333333%;
+    margin: 2% 0 0 2%;
+}
+img{
+    width: 100%;
+}
+.footer-logo img{
+    width: 25%;
+}
+.footer-logo{
+    margin-bottom: 5%;
+    transform: translateX(26%);
+}
+.footer-download {
+    display: flex;
+    gap: 10%;
+}
+.footer-download div{
+    width: 35%;
+}
+.copy-right{
+    color: var(--forth);
+    font-size: 18px;
+    transform: translatex(3%);
+    margin-top: 2%;
+}
+.footer__middle-side{
+    width: 33.3333333%;
+    margin-top: 2%;
+    text-align: center;
+}
+.footer__middle-side-main{
+    font-size: 30px;
+    color: var(--forth);
+    font-family: "Architects Daughter", cursive; ;
+}
+.policies{
+    gap: 20px;
+    justify-content: center;
+    margin-top: 13.6%;
+}
+.policies p{
+    color: var(--forth);
+    font-size: 18px;
+    font-weight: 550;
+}
+.policies a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer__right-side{
+    width: 33.3333333%;
+    margin-top: 2.5%;
+    text-align: center;
+}
+.footer__links{
+    flex-wrap: wrap;
+    gap: 65px 0;
+}
+.footer__links a{
+    display: block;
+    width: 50%;
+    font-size: 18px;
+    color: var(--forth);
+    text-decoration: none;
+    font-weight: 600;    
+}
+.footer__icons{
+    display: flex;
+    margin-top: 11.5%;
+    gap: 15%;
+    justify-content: center;
+    transform: translateX(-3%);
+}
+.footer__icons a{
+    font-size: 25px;
+    color: var(--forth);
+    width: 0;
+    display: inline;
+    
+}
+.moon-toggle{
+    background-color: #1c1f2c;
+    width: 60%;
+    height: 60%;
+    margin:1% 0 0 2%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+.moon{
+    width: 30%;
+    height: 90%;
+    background-color: #bbc1c9;
+    position: absolute;
+    top: 6%;
+    right: 1%;
+    z-index: 888;
+    border-radius: 30px;
+    
+}
+.first-layer-moon{
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    z-index: 777;
+    background-color: #575963;
+    right: -5%;
+    border-radius: 30px;
+}
+.second-layer-moon{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 666;
+    background-color: #474954;
+    right: -5%;
+    border-radius: 30px;
+}
+.third-layer-moon{
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    z-index: 555;
+    background-color: #323440;
+    right: -5%;
+    border-radius: 30px;
+}
+.moon__first-circle{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    padding: 20%;
+    background-color: #949eb2;
+    border-radius: 50%;
+}
+.moon__second-circle{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 10%;
+    background-color: #949eb2;
+    border-radius: 50%;
+}
+.darkMain{
+    background-image: url(../Images/Rectangle730dark.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.darkMainReversed{
+    background-image: url(../Images/Rectangle731dark.png) !important ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
